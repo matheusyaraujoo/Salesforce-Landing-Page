@@ -1,0 +1,141 @@
+<template>
+    <div class="main-wrapper">
+        
+        <template if:true={showNotification}>
+            <div class={notificationClass}>
+                <span>{notificationMessage}</span>
+                <button onclick={closeNotification}>&times;</button>
+            </div>
+        </template>
+        
+        <section class="hero">
+            <div class="container">
+                <h1>Centralização Corporativa em Nuvem</h1>
+                <p>
+                    Uma plataforma cloud-native projetada para unificar comunicação,
+                    colaboração e infraestrutura digital com alta disponibilidade,
+                    escalabilidade e governança corporativa.
+                </p>
+                
+                <button class="animated-button" onclick={scrollToForm}>
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                    <span class="text">Solicitar demonstração</span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="why">
+            <div class="container">
+                <div class="why-grid">
+                    <div class="why-flip-card">
+                        <div class="why-flip-front">
+                            <h3>Arquitetura Unificada</h3>
+                        </div>
+                        <div class="why-flip-back">
+                            <p>Consolidação de múltiplas camadas tecnológicas em uma arquitetura centralizada, resiliente e orientada a serviços cloud-native.</p>
+                        </div>
+                    </div>
+                    <div class="why-flip-card">
+                        <div class="why-flip-front">
+                            <h3>Otimização de CAPEX e OPEX</h3>
+                        </div>
+                        <div class="why-flip-back">
+                            <p>Redução de investimentos em infraestrutura física com adoção de um modelo financeiro previsível, escalável e orientado a consumo.</p>
+                        </div>
+                    </div>
+                    <div class="why-flip-card">
+                        <div class="why-flip-front">
+                            <h3>Elasticidade Operacional</h3>
+                        </div>
+                        <div class="why-flip-back">
+                            <p>Provisionamento dinâmico de recursos sob demanda, garantindo performance contínua e alta disponibilidade dos serviços.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-container">
+                <div class="info-content">
+                    <h2>Cloud-native e segura</h2>
+                    <p>Desenvolvida sob princípios de cloud computing moderno, garantindo alta disponibilidade e compliance.</p>
+                    <p>Elimine dependências de data centers locais e habilite ambientes de trabalho distribuídos com acesso remoto seguro.</p>
+                </div>
+                
+                <div class="info-image-container">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="cloud-svg">
+                        <path d="M17.5 19C15.0147 19 13 16.9853 13 14.5C13 12.0147 15.0147 10 17.5 10C17.7944 10 18.0805 10.0283 18.3572 10.0822C17.9407 8.30391 16.3218 7 14.39 7C12.3846 7 10.7107 8.4116 10.2974 10.2933C9.72033 9.49122 8.76159 9 7.68 9C5.64761 9 4 10.6476 4 12.68C4 12.8711 4.01456 13.0588 4.04265 13.242C2.86177 13.9113 2 15.187 2 16.65C2 18.8315 3.76852 20.6 5.95 20.6H17.5V19Z" fill="#00d084"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="differentials">
+            <div class="container">
+                <h2>Diferenciais Estratégicos</h2>
+                <div class="diff-grid">
+                    <div class="diff-card">
+                        <div class="bg"><h3>Atendimento 24/7</h3></div>
+                        <div class="blob"></div>
+                    </div>
+                    <div class="diff-card">
+                        <div class="bg"><h3>SLA 99.9%</h3></div>
+                        <div class="blob"></div>
+                    </div>
+                    <div class="diff-card">
+                        <div class="bg"><h3>APIs REST</h3></div>
+                        <div class="blob"></div>
+                    </div>
+                    <div class="diff-card">
+                        <div class="bg"><h3>Provisionamento</h3></div>
+                        <div class="blob"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-form" data-form>
+            <div class="login-box">
+                <h2>Solicitar contato</h2>
+                <small><strong>⚠️ Demonstração.</strong> Preencha para testar.</small>
+                
+                <form>
+                    <div class="user-box">
+                        <input type="text" data-field="nome" required class="input-field">
+                        <label>Nome completo</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="email" data-field="email" required class="input-field">
+                        <label>E-mail corporativo</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="tel" data-field="telefone" required class="input-field">
+                        <label>Telefone / Celular</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" data-field="empresa" required class="input-field">
+                        <label>Empresa</label>
+                    </div>
+
+                    <div class="form-action">
+                        <button type="button" onclick={handleSubmit} class="animated-submit" disabled={loading}>
+                            {buttonLabel}
+                            <span></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 — Matheus Yamaguchi de Araujo | Todos os direitos reservados
+        </footer>
+    </div>
+</template>

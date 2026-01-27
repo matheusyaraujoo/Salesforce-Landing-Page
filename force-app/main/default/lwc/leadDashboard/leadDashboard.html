@@ -1,0 +1,32 @@
+<template>
+    <div class="dashboard-container">
+        
+        <div class="kpi-grid">
+            <lightning-card title="Total Captado" icon-name="standard:lead">
+                <div class="kpi-content">
+                    <span class="big-number">{totalLeads}</span>
+                    <span class="sub-text">Leads da Demo</span>
+                </div>
+            </lightning-card>
+            
+            <lightning-card title="Status do Funil" icon-name="standard:metrics">
+                <div class="kpi-content">
+                    <span class="big-number success-text">Ativo</span>
+                    <span class="sub-text">Captação Online</span>
+                </div>
+            </lightning-card>
+        </div>
+
+        <lightning-card title="Últimos Leads (Tempo Real)" icon-name="standard:recent">
+            <div style="height: 300px;">
+                <lightning-datatable
+                    key-field="Id"
+                    data={leads}
+                    columns={columns}
+                    hide-checkbox-column="true"
+                    show-row-number-column="true">
+                </lightning-datatable>
+            </div>
+        </lightning-card>
+    </div>
+</template>
