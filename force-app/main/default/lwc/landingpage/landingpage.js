@@ -1,5 +1,6 @@
 import { LightningElement } from 'lwc';
 import createLead from '@salesforce/apex/PublicLeadController.createLead';
+import registerAccess from '@salesforce/apex/PublicLeadController.registerAccess';
 
 export default class Landingpage extends LightningElement {
     loading = false;
@@ -12,7 +13,14 @@ export default class Landingpage extends LightningElement {
         return `custom-toast ${this.notificationType}`;
     }
 
-    // Função de Scroll
+    connectedCallback() {
+        if (registerAccess) {
+            registerAccess()
+                .then(() => console.log('Acesso registrado com sucesso.'))
+                .catch(error => console.error('Erro no registro:', error));
+        }
+    }
+
     scrollToForm() {
         const formElement = this.template.querySelector('[data-form]');
         if (formElement) {
@@ -69,7 +77,6 @@ export default class Landingpage extends LightningElement {
             });
     }
 
-    // Lógica da notificação manual
     showCustomToast(message, type) {
         this.notificationMessage = message;
         this.notificationType = type;

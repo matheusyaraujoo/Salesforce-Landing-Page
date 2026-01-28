@@ -22,6 +22,27 @@ public without sharing class PublicLeadController {
         }
     }
 
+    // --- NOVOS MÉTODOS DE ACESSO ---
+
+    // 1. Registra que alguém entrou no site (Create)
+    @AuraEnabled
+    public static void registerAccess() {
+        try {
+            Site_Access__c newAccess = new Site_Access__c();
+            // Podemos salvar a data/hora explicitamente se quiser, mas CreatedDate já faz isso
+            insert newAccess;
+        } catch (Exception e) {
+            System.debug('Erro ao registrar acesso: ' + e.getMessage());
+            // Não lançamos erro para não atrapalhar a navegação do usuário
+        }
+    }
+
+    // 2. Conta total de visitas para o Dashboard (Read)
+    @AuraEnabled(cacheable=true)
+    public static Integer getAccessCount() {
+        return [SELECT Count() FROM Site_Access__c];
+    }
+
     // --- NOVOS MÉTODOS PARA O DASHBOARD ---
 
     @AuraEnabled(cacheable=true)

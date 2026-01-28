@@ -1,6 +1,7 @@
 import { LightningElement, wire, track } from 'lwc';
 import getRecentLeads from '@salesforce/apex/PublicLeadController.getRecentLeads';
 import getLeadCount from '@salesforce/apex/PublicLeadController.getLeadCount';
+import getAccessCount from '@salesforce/apex/PublicLeadController.getAccessCount';
 
 const COLUMNS = [
     { label: 'Nome', fieldName: 'Name' },
@@ -15,6 +16,7 @@ export default class LeadDashboard extends LightningElement {
     columns = COLUMNS;
     @track leads = [];
     @track totalLeads = 0;
+    @track totalAccess = 0;
 
     @wire(getRecentLeads)
     wiredLeads({ error, data }) {
@@ -33,4 +35,23 @@ export default class LeadDashboard extends LightningElement {
             console.error('Erro ao contar:', error);
         }
     }
+
+    @wire(getAccessCount)
+    wiredAccess({ error, data }) {
+        if (data) {
+            this.totalAccess = data;
+        } else if (error) {
+            console.error(error);
+        }
+    }
+
+    get conversionRate() {
+        if (this.totalAccess === 0) return '0%';
+        const rate = (this.totalLeads / this.totalAccess) * 100;
+        return rate.toFixed(1) + '%';
+    }
 }
+
+
+
+

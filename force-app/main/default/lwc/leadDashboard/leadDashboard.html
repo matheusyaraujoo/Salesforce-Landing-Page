@@ -2,19 +2,28 @@
     <div class="dashboard-container">
         
         <div class="kpi-grid">
-            <lightning-card title="Total Captado" icon-name="standard:lead">
+            
+            <lightning-card title="Tráfego (Visitas)" icon-name="standard:flow">
                 <div class="kpi-content">
-                    <span class="big-number">{totalLeads}</span>
-                    <span class="sub-text">Leads da Demo</span>
+                    <span class="big-number">{totalAccess}</span>
+                    <span class="sub-text">Acessos Únicos</span>
+                </div>
+            </lightning-card>
+
+            <lightning-card title="Leads Captados" icon-name="standard:lead">
+                <div class="kpi-content">
+                    <span class="big-number" style="color:#0176d3">{totalLeads}</span>
+                    <span class="sub-text">Formulários Enviados</span>
                 </div>
             </lightning-card>
             
-            <lightning-card title="Status do Funil" icon-name="standard:metrics">
+            <lightning-card title="Conversão" icon-name="standard:investment_account">
                 <div class="kpi-content">
-                    <span class="big-number success-text">Ativo</span>
-                    <span class="sub-text">Captação Online</span>
+                    <span class="big-number success-text">{conversionRate}</span>
+                    <span class="sub-text">Eficiência do Site</span>
                 </div>
             </lightning-card>
+
         </div>
 
         <lightning-card title="Últimos Leads (Tempo Real)" icon-name="standard:recent">
