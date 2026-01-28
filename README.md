@@ -11,6 +11,11 @@ Tecnologias Utilizadas
 - Salesforce: LWC, Apex, Experience Cloud (LWR), SOQL.
 - Web: HTML5, CSS3, JavaScript (ES6+).
 
+<img width="1762" height="838" alt="image" src="https://github.com/user-attachments/assets/f6859abc-8ed0-46cc-b1fe-5e9bd2cfd0c6" />
+<img width="1803" height="836" alt="image" src="https://github.com/user-attachments/assets/ad592782-8439-4492-8f39-934eeb107a3c" />
+
+
+
 
 
 # 🇺🇸 English
@@ -25,3 +30,6 @@ Key Features
 Tech Stack
 - Salesforce: LWC, Apex, Experience Cloud (LWR), SOQL.
 - Web: HTML5, CSS3, JavaScript (ES6+).
+
+<img width="1762" height="838" alt="image" src="https://github.com/user-attachments/assets/f6859abc-8ed0-46cc-b1fe-5e9bd2cfd0c6" />
+<img width="1803" height="836" alt="image" src="https://github.com/user-attachments/assets/ad592782-8439-4492-8f39-934eeb107a3c" />
