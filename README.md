@@ -16,6 +16,15 @@ Tecnologias Utilizadas
 <img width="1762" height="838" alt="image" src="https://github.com/user-attachments/assets/f6859abc-8ed0-46cc-b1fe-5e9bd2cfd0c6" />
 <img width="1803" height="836" alt="image" src="https://github.com/user-attachments/assets/b3e37388-1741-4088-9f43-d3a5bb4a8747" />
 
+Como testar?
+Este projeto está configurado em uma organização de demonstração ativa. Se você deseja ver o sistema funcionando em tempo real, desde a captação do lead até a atualização automática do dashboard administrativo, entre em contato comigo :)
+- **WhatsApp:** +55 11 939241498
+- **E-mail:** yaraujomatheus@gmail.com
+- **O que veremos:**
+    1. Preenchimento do formulário em ambiente público.
+    2. Validação instantânea de dados.
+    3. Painel de Analytics refletindo o novo acesso e a taxa de conversão
+
 
 
 
@@ -37,3 +46,12 @@ Tech Stack
 
 <img width="1762" height="838" alt="image" src="https://github.com/user-attachments/assets/f6859abc-8ed0-46cc-b1fe-5e9bd2cfd0c6" />
 <img width="1803" height="836" alt="image" src="https://github.com/user-attachments/assets/393ed5ad-664f-42fb-b94c-e0e4d3892021" />
+
+How to Live Showcase?
+This project is hosted on an active Salesforce Demo Org. If you would like to see the full end-to-end flow—from public lead capture to real-time administrative dashboard updates—feel free to reach out for a live demonstration :)
+- **WhatsApp:** +55 11 939241498
+- **E-mail:** yaraujomatheus@gmail.com
+- **What we'll cover:**
+    1. Public form submission and instant validation.
+    2. Real-time Lead creation inside Salesforce.
+    3. Management Dashboard updating traffic analytics and conversion rates on the fly.
