@@ -14,7 +14,7 @@ Tecnologias Utilizadas
 - Web: HTML5, CSS3, JavaScript (ES6+).
 
 <img width="1762" height="838" alt="image" src="https://github.com/user-attachments/assets/f6859abc-8ed0-46cc-b1fe-5e9bd2cfd0c6" />
-<img width="1803" height="836" alt="image" src="https://github.com/user-attachments/assets/ad592782-8439-4492-8f39-934eeb107a3c" />
+<img width="1803" height="836" alt="image" src="https://github.com/user-attachments/assets/b3e37388-1741-4088-9f43-d3a5bb4a8747" />
 
 
 
@@ -36,4 +36,4 @@ Tech Stack
 - Web: HTML5, CSS3, JavaScript (ES6+).
 
 <img width="1762" height="838" alt="image" src="https://github.com/user-attachments/assets/f6859abc-8ed0-46cc-b1fe-5e9bd2cfd0c6" />
-<img width="1803" height="836" alt="image" src="https://github.com/user-attachments/assets/ad592782-8439-4492-8f39-934eeb107a3c" />
+<img width="1803" height="836" alt="image" src="https://github.com/user-attachments/assets/393ed5ad-664f-42fb-b94c-e0e4d3892021" />
