@@ -1,4 +1,5 @@
 public without sharing class PublicLeadController {
+
     @AuraEnabled
     public static void createLead(String nome, String email, String empresa, String telefone) {
         try {
@@ -24,26 +25,26 @@ public without sharing class PublicLeadController {
 
     // --- NOVOS MÉTODOS DE ACESSO ---
 
-    // 1. Registra que alguém entrou no site (Create)
+    // 1. Registra que alguém entrou no site (FILTRADO PARA GUESTS APENAS)
     @AuraEnabled
     public static void registerAccess() {
-        try {
-            Site_Access__c newAccess = new Site_Access__c();
-            // Podemos salvar a data/hora explicitamente se quiser, mas CreatedDate já faz isso
-            insert newAccess;
-        } catch (Exception e) {
-            System.debug('Erro ao registrar acesso: ' + e.getMessage());
-            // Não lançamos erro para não atrapalhar a navegação do usuário
+        if (UserInfo.getUserType() == 'Guest') {
+            try {
+                Site_Access__c newAccess = new Site_Access__c();
+                insert newAccess;
+            } catch (Exception e) {
+                System.debug('Erro ao registrar acesso: ' + e.getMessage());
+            }
         }
     }
 
-    // 2. Conta total de visitas para o Dashboard (Read)
+    // 2. Conta total de visitas
     @AuraEnabled(cacheable=true)
     public static Integer getAccessCount() {
         return [SELECT Count() FROM Site_Access__c];
     }
 
-    // --- NOVOS MÉTODOS PARA O DASHBOARD ---
+    // --- MÉTODOS PARA O DASHBOARD ---
 
     @AuraEnabled(cacheable=true)
     public static List<Lead> getRecentLeads() {
