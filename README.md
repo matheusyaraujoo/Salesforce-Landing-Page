@@ -1,4 +1,4 @@
-🇧🇷 Português
+# 🇧🇷 Português
 Este projeto é uma solução Full Stack completa desenvolvida no ecossistema Salesforce. Ele une uma Landing Page de alta conversão (Front-end) a uma automação robusta de captura de dados e um painel de gestão administrativa (Back-end).
 
 Principais Recursos
@@ -13,7 +13,7 @@ Tecnologias Utilizadas
 
 
 
-🇺🇸 English
+# 🇺🇸 English
 This project is a complete Full Stack solution developed within the Salesforce ecosystem. It bridges a high-conversion Landing Page (Front-end) with robust data capture automation and an administrative management panel (Back-end).
 
 Key Features
