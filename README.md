@@ -1,18 +1,35 @@
-# Salesforce DX Project: Next Steps
+# 🇧🇷 Português
+Este projeto é uma solução Full Stack completa desenvolvida no ecossistema Salesforce. Ele une uma Landing Page de alta conversão (Front-end) a uma automação robusta de captura de dados e um painel de gestão administrativa (Back-end).
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Principais Recursos
+- Landing Page LWC: Interface moderna, responsiva e otimizada para conversão, desenvolvida com Lightning Web Components e CSS customizado.
+- Integração em Tempo Real: Conexão direta via Apex Controller que processa e insere Leads instantaneamente no Salesforce.
+- Toast System Customizado: Sistema de notificações de sucesso/erro que funciona de forma independente em sites públicos (LWR).
+- Lead Manager Dashboard: Um componente administrativo interno para visualização de KPIs e monitoramento de novos Leads em tempo real.
 
-## How Do You Plan to Deploy Your Changes?
+Tecnologias Utilizadas
+- Salesforce: LWC, Apex, Experience Cloud (LWR), SOQL.
+- Web: HTML5, CSS3, JavaScript (ES6+).
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+<img width="1762" height="838" alt="image" src="https://github.com/user-attachments/assets/f6859abc-8ed0-46cc-b1fe-5e9bd2cfd0c6" />
+<img width="1803" height="836" alt="image" src="https://github.com/user-attachments/assets/ad592782-8439-4492-8f39-934eeb107a3c" />
 
-## Configure Your Salesforce DX Project
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-## Read All About It
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
+# 🇺🇸 English
+This project is a complete Full Stack solution developed within the Salesforce ecosystem. It bridges a high-conversion Landing Page (Front-end) with robust data capture automation and an administrative management panel (Back-end).
+
+Key Features
+- LWC Landing Page: Modern, responsive, and conversion-optimized interface built with Lightning Web Components and custom CSS.
+- Real-time Integration: Direct connection via Apex Controller that processes and inserts Leads instantly into Salesforce.
+- Custom Toast System: A reliable notification system for success/error feedback designed for public-facing sites (LWR).
+- Lead Manager Dashboard: An internal administrative component for KPI visualization and real-time Lead monitoring.
+
+Tech Stack
+- Salesforce: LWC, Apex, Experience Cloud (LWR), SOQL.
+- Web: HTML5, CSS3, JavaScript (ES6+).
+
+<img width="1762" height="838" alt="image" src="https://github.com/user-attachments/assets/f6859abc-8ed0-46cc-b1fe-5e9bd2cfd0c6" />
+<img width="1803" height="836" alt="image" src="https://github.com/user-attachments/assets/ad592782-8439-4492-8f39-934eeb107a3c" />
